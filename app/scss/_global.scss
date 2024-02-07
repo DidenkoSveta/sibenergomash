@@ -1,9 +1,9 @@
 // Основные стили документа
 html,
 body {
-	font-family: "Montserrat";
-	font-weight: 300;
-	font-size: 20px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
 	height: 100vh;
 	overflow-x: hidden;
 	background: $white;
@@ -15,7 +15,7 @@ body {
 a,
 button {
 	cursor: pointer;
-	color: $white;
+	color: $black;
 }
 
 // Выравнивание для header и footer
@@ -25,47 +25,16 @@ footer {
 	display: flex;
 }
 
-// Общие стили для основных секций
-header,
-footer,
-.skills,
-.projects,
-.skills-languages,
-.about-education,
-.project-overview,
-.project,
-.result {
-	width: 100vw;
-	padding: 30px 14vw;
-	display: flex;
-}
 
-// Отступы секций
-.projects,
-.skills-languages,
-.about-education,
-.project,
-.result {
-	margin-top: 100px;
-}
-
-.skills {
-	margin-top: 130px;
-}
-footer {
-	margin-top: 120px;
-}
 
 // Стили для заголовков
 .title {
-	font-family: "Poppins", sans-serif;
 	font-size: 40px;
 	font-weight: 500;
 	letter-spacing: 0.96px;
-	background: $white;
 	-webkit-background-clip: text;
 	background-clip: text;
-	color: transparent;
+	color: $black;
 	margin-bottom: 60px;
 	padding: 10px 0;
 }
