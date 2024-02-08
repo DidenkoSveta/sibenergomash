@@ -240,4 +240,135 @@
    }
 }
 
+
+.footer{
+   background-color: $black;
+   color: $white;
+   font-size: 14px;
+   &__logo{
+      height: 90px;
+      width: 190px;
+   }
+   &__description{
+      opacity: 0.6;
+   }
+   &__bottom{
+      display: flex;
+      width: 100%;
+      padding-top: 1vw;
+      padding-bottom: 1.2vw;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+      a{
+         color: $white;
+      }
+      a:hover{
+         color: $light-blue;
+         transition: color 0.2s ease-in-out;
+      }
+   }
+   &__top{
+      display: flex;
+      padding-top: 2vw;
+      padding-bottom: 2vw;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      column-gap: 10px;
+      row-gap: 40px;
+   }
+   &__links,
+   &__brand,
+   &__contacts{
+      width: 20%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      h3{
+         font-size: 16px;
+         opacity: 0.6;
+      }
+   }
+   &__list{
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      a{
+         color: $white;
+      }
+      a:hover{
+         color: $light-blue;
+         transition: color 0.2s ease-in-out;
+      }
+   }
+   &__contact-link,
+   &__contact-mail{
+      display: flex;
+      align-items: center;
+   }
+   &__address{
+      display: flex;
+      align-items: flex-start;
+   }
+   &__contact-link::before{
+      content: "";
+      display: inline-block;
+      background-image: url("../images/icons/footer/phone.svg");
+      height: 14px;
+      width: 14px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin-right: 4px;
+   }
+   &__contact-mail::before{
+      content: "";
+      display: inline-block;
+      background-image: url("../images/icons/footer/mail.svg");
+      height: 14px;
+      width: 14px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin-right: 6px;
+   }
+   &__address::before{
+      content: "";
+      display: inline-block;
+      background-image: url("../images/icons/footer/location.svg");
+      height: 20px;
+      width: 20px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin-right: 6px;
+   }
+}
+
+.footer__container{
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+
+.hr__footer{
+   height: 1px;
+   width: 100%;
+   background-color: #cccccc8a;
+   margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @import "mobile";
