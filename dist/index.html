@@ -7,6 +7,7 @@
    <link rel="icon" href="images/icons/favicon.png">
    <title>ТПК Сибэнергомаш</title>
    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -115,8 +116,38 @@
             </nav>
          </div>
       </header>
+<!-- <div class="carousel">
+   <div class="carousel__slides">
+      <div class="carousel__slide"><img src="images/img/carousel-slide-01.png" alt=""></div>
+      <div class="carousel__slide"><img src="images/img/carousel-slide-01.png" alt=""></div>
+      <div class="carousel__slide"><img src="images/img/carousel-slide-01.png" alt=""></div>
+   </div>
+   <div class="carousel__indicators">
+      <span class="carousel__indicator" data-slide-to="0"></span>
+      <span class="carousel__indicator" data-slide-to="1"></span>
+      <span class="carousel__indicator" data-slide-to="2"></span>
+      <span class="carousel__indicator" data-slide-to="3"></span>
+      <span class="carousel__indicator" data-slide-to="4"></span>
+   </div>
+</div> -->
 
+<!-- Swiper -->
+<div class="swiper-container">
+   <div class="swiper-wrapper">
+     <!-- Slides -->
+     <div class="swiper-slide" style="background-image:url('images/img/carousel-slide-01.png')"></div>
+     <div class="swiper-slide" style="background-image:url('images/img/carousel-slide-01.png')"></div>
+     <div class="swiper-slide" style="background-image:url('images/img/carousel-slide-01.png')"></div>
+     <div class="swiper-slide" style="background-image:url('images/img/carousel-slide-01.png')"></div>
+     <div class="swiper-slide" style="background-image:url('images/img/carousel-slide-01.png')"></div>
+     <!-- ... -->
+   </div>
+   <!-- Add Pagination -->
+   <div class="swiper-pagination"></div>
+ </div>
  
+
+
 <footer class="footer">
   <div class="footer__container">
     <div class="footer__top">
@@ -176,6 +207,7 @@
 
 </div>
 <script src="js/main.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </body>
 
 </html>

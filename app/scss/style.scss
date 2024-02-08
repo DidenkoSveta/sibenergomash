@@ -240,19 +240,18 @@
    }
 }
 
-
-.footer{
+.footer {
    background-color: $black;
    color: $white;
    font-size: 14px;
-   &__logo{
+   &__logo {
       height: 90px;
       width: 190px;
    }
-   &__description{
+   &__description {
       opacity: 0.6;
    }
-   &__bottom{
+   &__bottom {
       display: flex;
       width: 100%;
       padding-top: 1vw;
@@ -260,15 +259,15 @@
       justify-content: space-between;
       flex-wrap: wrap;
       gap: 10px;
-      a{
+      a {
          color: $white;
       }
-      a:hover{
+      a:hover {
          color: $light-blue;
          transition: color 0.2s ease-in-out;
       }
    }
-   &__top{
+   &__top {
       display: flex;
       padding-top: 2vw;
       padding-bottom: 2vw;
@@ -279,38 +278,38 @@
    }
    &__links,
    &__brand,
-   &__contacts{
+   &__contacts {
       width: 20%;
       display: flex;
       flex-direction: column;
       gap: 10px;
-      h3{
+      h3 {
          font-size: 16px;
          opacity: 0.6;
       }
    }
-   &__list{
+   &__list {
       display: flex;
       flex-direction: column;
       gap: 6px;
-      a{
+      a {
          color: $white;
       }
-      a:hover{
+      a:hover {
          color: $light-blue;
          transition: color 0.2s ease-in-out;
       }
    }
    &__contact-link,
-   &__contact-mail{
+   &__contact-mail {
       display: flex;
       align-items: center;
    }
-   &__address{
+   &__address {
       display: flex;
       align-items: flex-start;
    }
-   &__contact-link::before{
+   &__contact-link::before {
       content: "";
       display: inline-block;
       background-image: url("../images/icons/footer/phone.svg");
@@ -320,7 +319,7 @@
       background-repeat: no-repeat;
       margin-right: 4px;
    }
-   &__contact-mail::before{
+   &__contact-mail::before {
       content: "";
       display: inline-block;
       background-image: url("../images/icons/footer/mail.svg");
@@ -330,7 +329,7 @@
       background-repeat: no-repeat;
       margin-right: 6px;
    }
-   &__address::before{
+   &__address::before {
       content: "";
       display: inline-block;
       background-image: url("../images/icons/footer/location.svg");
@@ -342,33 +341,106 @@
    }
 }
 
-.footer__container{
+.footer__container {
    display: flex;
    flex-direction: column;
    gap: 10px;
 }
 
-.hr__footer{
+.hr__footer {
    height: 1px;
    width: 100%;
    background-color: #cccccc8a;
    margin: 0 auto;
 }
 
+// .carousel {
+//    overflow: hidden;
+//    position: relative;
+//    height: 500px;
+//    &__slides {
+//       display: flex;
+//       transition: transform 0.5s ease-in-out;
+//    }
+//    &__slide {
+//       flex: none;
+//       width: 100%;
+//       position: relative;
+//       display: flex;
+//       align-items: center;
+//       justify-content: center;
+//       text-align: center;
+//       img {
+//          width: 100%;
+//          height: 500px;
+//       }
+//    }
+//    &__indicators {
+//       position: absolute;
+//       bottom: 10px;
+//       left: 50%;
+//       transform: translateX(-50%);
+//       display: flex;
+//    }
+//    &__indicators {
+//       position: absolute;
+//       bottom: 10px;
+//       left: 50%;
+//       transform: translateX(-50%);
+//       display: flex;
 
+//       &__indicator {
+//          width: 15px;
+//          height: 15px;
+//          border-radius: 50%;
+//          background-color: rgba(255, 255, 255, 0.5);
+//          margin: 0 5px;
+//          cursor: pointer;
+//          transition: background-color 0.3s;
 
+//          &.active {
+//             background-color: rgba(255, 255, 255, 1);
+//          }
+//       }
+//    }
+// }
 
-
-
-
-
-
-
-
-
-
-
-
-
+.swiper-container {
+   position: relative;
+   width: 100%;
+   height: 500px;
+ 
+   .swiper-wrapper {
+     .swiper-slide {
+       background-size: cover;
+       background-position: center;
+       height: 500px;
+     }
+   }
+ 
+   .swiper-pagination {
+     bottom: 30px;
+     left: 0;
+     width: 100%;
+     text-align: center;
+ 
+     .swiper-pagination-bullet {
+       width: 16px;
+       height: 16px;
+       display: inline-block;
+       border-radius: 50%;
+       background: #fff;
+       opacity: 0.5;
+       margin: 0 4px;
+ 
+       &-active {
+         opacity: 1;
+         background: $light-blue;
+       }
+     }
+   }
+ }
+ 
+ 
 
 @import "mobile";

@@ -23,14 +23,12 @@
    }
 }
 
-
 @media (max-width: 1440px) {
    .header__top-bar,
    .footer__container {
       padding: 10px 3vw;
    }
 }
-
 
 @media (max-width: 1440px) {
    .header__navigation {
@@ -105,55 +103,53 @@
    }
 }
 
-
-
 @media (max-width: 1070px) {
-   .navigation__mobile{
+   .navigation__mobile {
       display: flex;
       position: relative;
       width: 50%;
-      margin-right: 25%!important;
+      margin-right: 25% !important;
       justify-content: space-between;
-      .menu__link{
+      .menu__link {
          font-size: 18px;
       }
    }
 }
 @media (max-width: 1040px) {
-   .header__contact-location{
+   .header__contact-location {
       display: none;
    }
 }
 @media (max-width: 768px) {
-   .search-box{
+   .search-box {
       width: 180px;
    }
 }
 @media (max-width: 768px) {
-   .contact__phone-mobile{
+   .contact__phone-mobile {
       display: block;
    }
 }
 @media (max-width: 768px) {
    .contact__phone,
-   .contact__mail{
+   .contact__mail {
       display: none;
    }
 }
 @media (max-width: 768px) {
-   .header__contact{
-      span{
+   .header__contact {
+      span {
          display: none;
       }
    }
 }
 @media (max-width: 1040px) {
-   .logo__image{
+   .logo__image {
       height: 65px;
    }
 }
 @media (max-width: 440px) {
-   .search-box{
+   .search-box {
       width: 90px;
    }
 }
@@ -173,29 +169,61 @@
 @media (max-width: 1040px) {
    .footer__links,
    .footer__brand,
-   .footer__contacts{
+   .footer__contacts {
       width: 260px;
-      h3{
+      h3 {
          font-size: 14px;
          opacity: 0.6;
       }
    }
 }
 @media (max-width: 768px) {
-   .footer__bottom{
+   .footer__bottom {
       justify-content: center;
    }
 }
 @media (max-width: 1040px) {
-   .footer{
+   .footer {
       font-size: 12px;
    }
 }
 @media (max-width: 1040px) {
-   .footer__list{
+   .footer__list {
       gap: 4px;
    }
 }
-@media (max-width: 1440px) {
+@media (max-width: 1240px) {
+   .swiper-container {
+      height: 420px;
+
+      .swiper-wrapper {
+         .swiper-slide {
+            height: 420px;
+         }
+      }
+   }
+}
+@media (max-width: 1040px) {
+   .swiper-container {
+      height: 320px;
+
+      .swiper-wrapper {
+         .swiper-slide {
+            height: 320px;
+         }
+      }
+   }
+}
+
+@media (max-width: 490px) {
+   .swiper-container {
+      height: 280px;
+
+      .swiper-wrapper {
+         .swiper-slide {
+            height: 280px;
+         }
+      }
+   }
 }
 
