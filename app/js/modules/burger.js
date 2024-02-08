@@ -1,7 +1,7 @@
 // burger menu
 let menuOpenButton = document.querySelector('.header__burger');
-let menu = document.querySelector('.header__menu');
-let menuLinks = document.querySelectorAll('.nav__link'); // Получаем все ссылки внутри меню
+let menu = document.querySelector('.navigation__menu ');
+let menuLinks = document.querySelectorAll('.menu__link'); // Получаем все ссылки внутри меню
 
 // Обработчик клика для открытия меню
 menuOpenButton.addEventListener('click', () => {
@@ -15,7 +15,7 @@ document.addEventListener('click', (e) => {
     return;
   }
 
-  if (e.target.closest('.header__close') || !e.target.closest('.header__menu')) {
+  if (e.target.closest('.header__close') || !e.target.closest('.navigation__menu')) {
     // Закрыть меню, если кликнули на кнопку закрытия или вне меню
     menu.classList.remove('show');
   }

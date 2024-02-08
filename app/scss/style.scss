@@ -3,51 +3,81 @@
 @import "reset";
 @import "global";
 
-.header{
-   &__contact{
+.header {
+   &__contact {
       display: flex;
       flex-direction: column;
       gap: 4px;
-      span{
+      span {
          font-size: 14px;
          padding-bottom: 4px;
       }
-      a{
+      a {
          font-weight: 600;
       }
+   }
+   &__burger {
+      position: relative;
+      right: 0px;
+      cursor: pointer;
+      background-image: url("../images/icons/header/burger-menu.svg");
+      background-repeat: no-repeat;
+      height: 35px;
+      width: 35px;
+      display: none;
+   }
+   &__close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      z-index: 2000;
+      cursor: pointer;
+      background-image: url("../images/icons/header/burger-close.svg");
+      background-repeat: no-repeat;
+      height: 35px;
+      width: 35px;
+      display: none;
    }
 }
 
 .contact__phone,
 .contact__mail,
-.contact__location{
+.contact__location {
    display: flex;
    align-items: center;
    gap: 4px;
 }
-.contact__phone::before{
+
+.contact__phone:hover,
+.contact__mail:hover,
+.contact__location:hover {
+   color: $blue;
+   transition: color 0.15s ease-in-out;
+}
+
+.contact__phone::before {
    content: "";
    display: inline-block;
-   background-image: url('../images/icons/header/phone.svg');
+   background-image: url("../images/icons/header/phone.svg");
    height: 23px;
    width: 23px;
    background-size: contain;
    background-repeat: no-repeat;
 }
 
-.contact__mail::before{
+.contact__mail::before {
    content: "";
    display: inline-block;
-   background-image: url('../images/icons/header/mail.svg');
+   background-image: url("../images/icons/header/mail.svg");
    height: 23px;
    width: 23px;
    background-size: contain;
    background-repeat: no-repeat;
 }
-.contact__location::before{
+.contact__location::before {
    content: "";
    display: inline-block;
-   background-image: url('../images/icons/header/location.svg');
+   background-image: url("../images/icons/header/location.svg");
    height: 23px;
    width: 23px;
    background-size: contain;
@@ -76,6 +106,7 @@
    padding: 0 10vw;
    height: 60px;
    .menu__item {
+      transition: color 0.3s ease-in-out;
       a {
          display: inline-block;
          color: $white;
@@ -85,6 +116,7 @@
    }
    .menu__item:hover {
       background-color: $light-blue;
+      transition: background-color 0.3s ease-in-out;
    }
 }
 
@@ -111,61 +143,101 @@
    align-items: center;
    position: relative;
    width: 250px; // Установи нужную ширину
- 
-   &__input {
-     width: 100%;
-     padding: 0.5rem 2rem 0.5rem 0.5rem; // Правый отступ больше, чтобы сделать место для иконки
-     border: 1px solid #cccccc;
-     border-radius: 20px;
-     font-size: 1rem;
- 
-     &:focus {
-       outline: none;
-       border-color: #555555;
-     }
- 
-     &::placeholder {
-       color: #cccccc;
-     }
-   }
- 
-   &__button {
-     position: absolute;
-     right: 0;
-     border: none;
-     background: none;
-     padding: 0.5rem;
-     border-radius: 0 20px 20px 0;
-     cursor: pointer;
- 
-     &:focus {
-       outline: none;
-     }
- 
-     &:hover {
-       background: none;
-     }
- 
-     &__icon {
-       fill: #333333; // Цвет иконки
-     }
-   }
- }
 
- .submenu__link{
+   &__input {
+      width: 100%;
+      padding: 0.5rem 2rem 0.5rem 0.5rem; // Правый отступ больше, чтобы сделать место для иконки
+      border: 1px solid #cccccc;
+      border-radius: 20px;
+      font-size: 1rem;
+
+      &:focus {
+         outline: none;
+         border-color: #555555;
+      }
+
+      &::placeholder {
+         color: #cccccc;
+      }
+   }
+
+   &__button {
+      position: absolute;
+      right: 0;
+      border: none;
+      background: none;
+      padding: 0.5rem;
+      border-radius: 0 20px 20px 0;
+      cursor: pointer;
+
+      &:focus {
+         outline: none;
+      }
+
+      &:hover {
+         background: none;
+      }
+
+      &__icon {
+         fill: #333333; // Цвет иконки
+      }
+   }
+}
+
+.submenu__link {
    display: flex;
    gap: 4px;
- }
+}
 
-.submenu__link::after{
+.submenu__link::after {
    content: "";
    display: inline-block;
    height: 7px;
    width: 10px;
-   background-image: url('../images/icons/header/submenu.svg');
+   background-image: url("../images/icons/header/submenu.svg");
    background-size: contain;
    background-repeat: no-repeat;
    margin-left: 4px;
+}
+.navigation__mobile {
+   display: none;
+}
+
+.contact__phone-mobile {
+   display: none;
+   background-image: url("../images/icons/header/calling.svg");
+   background-size: contain;
+   background-repeat: no-repeat;
+   width: 47px;
+   height: 40px;
+}
+
+.menu__underlist {
+   display: none;
+}
+
+.menu__item {
+   position: relative;
+   .menu__underlist {
+      position: absolute;
+      width: 300px;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+      .menu__underlist-link {
+         width: 100%;
+         color: $black;
+      }
+      .menu__underlist-link:hover {
+         background: $light-blue;
+         color: $white;
+         transition: 0.2s ease-in-out;
+      }
+   }
+}
+
+.menu__item:hover {
+   .menu__underlist {
+      display: block;
+   }
 }
 
 @import "mobile";
