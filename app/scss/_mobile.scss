@@ -3,7 +3,10 @@
    .footer__container,
    .products__container,
    .about__container,
-   .faq-container {
+   .faq-container,
+   .certificates__container,
+   .maps__container,
+   .portfolio__container {
       padding: 10px 7vw;
    }
 }
@@ -13,7 +16,10 @@
    .footer__container,
    .products__container,
    .about__container,
-   .faq-container {
+   .faq-container,
+   .certificates__container,
+   .maps__container,
+   .portfolio__container {
       padding: 10px 3vw;
    }
 }
@@ -251,8 +257,22 @@
       row-gap: 10px;
    }
 }
-@media (max-width: 768px){}
-@media (max-width: 768px){}
+@media (max-width: 1240px){
+   .portfolio-item{
+      width: 48%;
+   }
+}
+@media (max-width: 768px){
+   .portfolio-item{
+      width: 100%;
+   }
+}
+@media (max-width: 1240px){
+   .portfolio-grid{
+      row-gap: 40px;
+      column-gap: 2%;
+   }
+}
 @media (max-width: 768px){}
 @media (max-width: 768px){}
 @media (max-width: 768px){}

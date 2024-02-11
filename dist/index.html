@@ -8,6 +8,7 @@
    <title>ТПК Сибэнергомаш</title>
    <link rel="stylesheet" type="text/css" href="css/style.min.css">
    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+   <link rel="stylesheet" href="path-to-your-lightbox.min.css">
 </head>
 
 <body>
@@ -144,33 +145,55 @@
 </div> -->
 
 
-<div class="faq">
-   <div class="faq-container">
-      <h2 class="faq-title">Вопросы и ответы</h2>
-      <div class="faq-grid">
-         <div class="faq-item">
-            <button class="faq-question">Как рассчитать необходимую мощность котла?<span class="faq-sign">+</span></button>
-            <div class="faq-answer">
-               <p>Необходимую мощность котла может рассчитать наш проектировщик. Напишите на почту <a href="mailto:zakaz@tpkspem.ru">zakaz@tpkspem.ru</a></p>
+
+
+<section class="portfolio">
+   <div class="portfolio__container">
+      <h2 class="portfolio-title">Наши работы</h2>
+      <div class="portfolio-filter">
+         <button class="filter-btn active" data-filter="all">Все работы</button>
+         <button class="filter-btn" data-filter="category1">ВПУ</button>
+         <button class="filter-btn" data-filter="category2">Котлы АКВР</button>
+         <button class="filter-btn" data-filter="category3">Котлы АСЕ</button>
+         <button class="filter-btn" data-filter="category4">Фильтры</button>
+      </div>
+      <div class="portfolio-grid">
+         <!-- Пример карточки работы -->
+         <div href="#" class="portfolio-item" data-category="category1">
+            <div class="portfolio-image-wrapper">
+               <img src="images/img/cases/case-01.png" alt="Фильтры ФИЛА I и ФИЛА II в г. Мариуполь"
+                  class="portfolio-image">
             </div>
+            <h3 class="portfolio-item-title">Фильтры ФИЛА I и ФИЛА II в г. Мариуполь</h3>
+            <a href="" class="portfolio-link">Смотреть подробнее</a>
          </div>
-         <div class="faq-item">
-            <button class="faq-question">Изготавливаете оборудование по ТЗ заказчика?<span class="faq-sign">+</span></button>
-            <div class="faq-answer">
-               <p>Да, мы производим оборудование и по техническому заданию Заказчика. Приём заявок по электронной почте <a href="mailto:zakaz@tpkspem.ru">zakaz@tpkspem.ru</a></p>
+            <div href="#" class="portfolio-item" data-category="category1">
+               <div class="portfolio-image-wrapper">
+                  <img src="images/img/cases/case-01.png" alt="Фильтры ФИЛА I и ФИЛА II в г. Мариуполь"
+                     class="portfolio-image">
+               </div>
+               <h3 class="portfolio-item-title">Фильтры ФИЛА I и ФИЛА II в г. Мариуполь</h3>
+               <a href="" class="portfolio-link">Смотреть подробнее</a>
             </div>
-         </div>
-         <div class="faq-item">
-            <button class="faq-question">Какой срок изготовления парового котла серии Е<span class="faq-sign">+</span></button>
-            <div class="faq-answer">
-               <p>Срок изготовления парового котла серии Е в среднем составляет 30-40 дней. Чаще продукция изготавливается чуть раньше. Узнать срок исполнения Вашей заявки можно по телефону <a href="tel:+79628112699">+7(962) 811-26-99</a> или по электронной почте <a href="mailto:zakaz@tpkspem.ru">zakaz@tpkspem.ru</a></p>
+            <div href="#" class="portfolio-item" data-category="category2">
+               <div class="portfolio-image-wrapper">
+                  <img src="images/img/cases/case-01.png" alt="Фильтры ФИЛА I и ФИЛА II в г. Мариуполь"
+                     class="portfolio-image">
+               </div>
+               <h3 class="portfolio-item-title">Фильтры ФИЛА I и ФИЛА II в г. Мариуполь</h3>
+               <a href="" class="portfolio-link">Смотреть подробнее</a>
+            </div>
+            <div href="#" class="portfolio-item" data-category="category3 category4">
+               <div class="portfolio-image-wrapper">
+                  <img src="images/img/cases/case-01.png" alt="Фильтры ФИЛА I и ФИЛА II в г. Мариуполь"
+                     class="portfolio-image">
+               </div>
+               <h3 class="portfolio-item-title">Фильтры ФИЛА I и ФИЛА II в г. Мариуполь</h3>
+               <a href="" class="portfolio-link">Смотреть подробнее</a>
             </div>
          </div>
       </div>
-      <!-- ... другие элементы FAQ ... -->
-   </div>
-</div>
-
+</section>
 
 <footer class="footer">
   <div class="footer__container">
@@ -232,6 +255,7 @@
 </div>
 <script src="js/main.min.js"></script>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="path-to-your-lightbox.min.js"></script>
 </body>
 
 </html>

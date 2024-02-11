@@ -109,14 +109,19 @@ footer {
 .carousel,
 .products,
 .about,
-.faq{
+.faq,
+.maps,
+.portfolio{
 	width: 100vw;
 }
 
 .footer__container,
 .products__container,
 .about__container,
-.faq-container{
+.faq-container,
+.certificates__container,
+.maps__container,
+.portfolio__container{
 	width: 100vw;
 	padding: 0 10vw;
 }
