@@ -1,7 +1,9 @@
 @media (max-width: 1740px) {
    .header__top-bar,
    .footer__container,
-   .products__container {
+   .products__container,
+   .about__container,
+   .faq-container {
       padding: 10px 7vw;
    }
 }
@@ -9,7 +11,9 @@
 @media (max-width: 1440px) {
    .header__top-bar,
    .footer__container,
-   .products__container {
+   .products__container,
+   .about__container,
+   .faq-container {
       padding: 10px 3vw;
    }
 }
@@ -235,3 +239,26 @@
       min-width: 260px;
    }
 }
+
+@media (max-width: 768px){
+   .faq-item{
+      width: 100%;
+   }
+}
+
+@media (max-width: 768px){
+   .faq-grid{
+      row-gap: 10px;
+   }
+}
+@media (max-width: 768px){}
+@media (max-width: 768px){}
+@media (max-width: 768px){}
+@media (max-width: 768px){}
+@media (max-width: 768px){}
+@media (max-width: 768px){}
+@media (max-width: 768px){}
+@media (max-width: 768px){}
+@media (max-width: 768px){}
+@media (max-width: 768px){}
+@media (max-width: 768px){}

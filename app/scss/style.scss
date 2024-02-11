@@ -407,14 +407,14 @@
       flex-direction: column;
       width: 24%;
       min-width: 280px;
-      gap: 2%;
+      gap: 20px;
       border: 1px solid #ebebeb;
       padding: 15px;
       border-radius: 5px;
       overflow: hidden;
       cursor: pointer;
    }
-   &__category:hover{
+   &__category:hover {
       border: 1px solid $light-blue;
    }
 }
@@ -424,23 +424,86 @@
       display: flex;
       width: 90%;
       flex-wrap: wrap;
-      gap: 4px;
-   }
-   &__item {
-      padding: 6px;
-      background-color: #eceaea;
-      font-size: 12px;
+      gap: 6px;
    }
    &__link {
+      padding: 4px;
+      background-color: #eceaea;
+      font-size: 12px;
       cursor: pointer;
       border: 1px solid #eceaea;
    }
    &__link:hover {
       border: 1px solid $light-blue;
    }
-   &__title{
+   &__title {
       font-weight: 500;
    }
 }
+
+.about {
+   margin: 80px 0 40px;
+   &__description {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+   }
+}
+
+.faq {
+   margin: 80px 0 40px;
+   &-grid{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      row-gap: 30px;
+      column-gap: 1%;
+   }
+   &-item {
+      margin-bottom: 10px;
+      width: 49%;
+   }
+   &-sign{
+      position: relative;
+      display: inline-block;
+      right: 2%;
+      font-size: 22px;
+      text-align: center;
+      vertical-align: middle;
+      line-height: auto;
+   }
+}
+
+.faq-question {
+   width: 100%;
+   text-align: left;
+   display: flex;
+   justify-content: space-between;
+   padding: 10px;
+   background-color: $blue; // Цвет фона
+   color: $white; // Цвет текста
+   border: none;
+   cursor: pointer;
+   transition: background-color 0.3s;
+
+   &:hover {
+     background-color: darken(#015CAC, 10%);
+   }
+ }
+
+ .faq-answer {
+   padding: 10px;
+   max-height: 0;
+   visibility: hidden; // Изначально делаем содержимое невидимым
+   opacity: 0; // Устанавливаем прозрачность содержимого в ноль
+   transition: visibility 0s linear 0.3s, opacity 0.3s linear, max-height 0.3s ease;
+
+   &.active {
+      visibility: visible; // Содержимое становится видимым
+      opacity: 1; // Содержимое становится непрозрачным
+      max-height: 1000px; // Устанавливаем достаточно большое значение max-height
+      transition-delay: 0s; // Убираем задержку при открытии
+   }
+ }
 
 @import "mobile";

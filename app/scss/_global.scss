@@ -32,7 +32,11 @@ h2{
 
 @media (max-width: 440px) {
 	h2{
-		font-size: 22px;
+		font-size: 20px;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		align-items: center;
 	}
 }
 
@@ -46,6 +50,14 @@ h2::before{
 	color: $red;
 	vertical-align: middle;
 	margin-right: 10px;
+}
+
+@media (max-width: 440px){
+	h2::before{
+		height: 6px;
+		width: 40px;
+		margin-bottom: 10px;
+	}
 }
 
 .wrapper {
@@ -95,12 +107,16 @@ footer {
 
 .footer,
 .carousel,
-.products{
+.products,
+.about,
+.faq{
 	width: 100vw;
 }
 
 .footer__container,
-.products__container{
+.products__container,
+.about__container,
+.faq-container{
 	width: 100vw;
 	padding: 0 10vw;
 }
