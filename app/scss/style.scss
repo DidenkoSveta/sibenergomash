@@ -222,6 +222,7 @@
       position: absolute;
       width: 300px;
       box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
       .menu__underlist-link {
          width: 100%;
          color: $black;
@@ -354,93 +355,92 @@
    margin: 0 auto;
 }
 
-// .carousel {
-//    overflow: hidden;
-//    position: relative;
-//    height: 500px;
-//    &__slides {
-//       display: flex;
-//       transition: transform 0.5s ease-in-out;
-//    }
-//    &__slide {
-//       flex: none;
-//       width: 100%;
-//       position: relative;
-//       display: flex;
-//       align-items: center;
-//       justify-content: center;
-//       text-align: center;
-//       img {
-//          width: 100%;
-//          height: 500px;
-//       }
-//    }
-//    &__indicators {
-//       position: absolute;
-//       bottom: 10px;
-//       left: 50%;
-//       transform: translateX(-50%);
-//       display: flex;
-//    }
-//    &__indicators {
-//       position: absolute;
-//       bottom: 10px;
-//       left: 50%;
-//       transform: translateX(-50%);
-//       display: flex;
-
-//       &__indicator {
-//          width: 15px;
-//          height: 15px;
-//          border-radius: 50%;
-//          background-color: rgba(255, 255, 255, 0.5);
-//          margin: 0 5px;
-//          cursor: pointer;
-//          transition: background-color 0.3s;
-
-//          &.active {
-//             background-color: rgba(255, 255, 255, 1);
-//          }
-//       }
-//    }
-// }
-
 .swiper-container {
    position: relative;
    width: 100%;
    height: 500px;
- 
+
    .swiper-wrapper {
-     .swiper-slide {
-       background-size: cover;
-       background-position: center;
-       height: 500px;
-     }
+      .swiper-slide {
+         background-size: cover;
+         background-position: center;
+         height: 500px;
+      }
    }
- 
+
    .swiper-pagination {
-     bottom: 30px;
-     left: 0;
-     width: 100%;
-     text-align: center;
- 
-     .swiper-pagination-bullet {
-       width: 16px;
-       height: 16px;
-       display: inline-block;
-       border-radius: 50%;
-       background: #fff;
-       opacity: 0.5;
-       margin: 0 4px;
- 
-       &-active {
-         opacity: 1;
-         background: $light-blue;
-       }
-     }
+      bottom: 30px;
+      left: 0;
+      width: 100%;
+      text-align: center;
+
+      .swiper-pagination-bullet {
+         width: 16px;
+         height: 16px;
+         display: inline-block;
+         border-radius: 50%;
+         background: #fff;
+         opacity: 0.5;
+         margin: 0 4px;
+
+         &-active {
+            opacity: 1;
+            background: $light-blue;
+         }
+      }
    }
- }
- 
- 
+}
+
+.products {
+   margin: 80px 0 40px;
+   &__categories {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      column-gap: 10px;
+      row-gap: 30px;
+   }
+   &__category {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      width: 24%;
+      min-width: 280px;
+      gap: 2%;
+      border: 1px solid #ebebeb;
+      padding: 15px;
+      border-radius: 5px;
+      overflow: hidden;
+      cursor: pointer;
+   }
+   &__category:hover{
+      border: 1px solid $light-blue;
+   }
+}
+
+.category {
+   &__list {
+      display: flex;
+      width: 90%;
+      flex-wrap: wrap;
+      gap: 4px;
+   }
+   &__item {
+      padding: 6px;
+      background-color: #eceaea;
+      font-size: 12px;
+   }
+   &__link {
+      cursor: pointer;
+      border: 1px solid #eceaea;
+   }
+   &__link:hover {
+      border: 1px solid $light-blue;
+   }
+   &__title{
+      font-weight: 500;
+   }
+}
 
 @import "mobile";

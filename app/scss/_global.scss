@@ -17,6 +17,37 @@ body {
 	}
 }
 
+h2{
+	font-size: 32px;
+	font-weight: 600;
+	margin: 50px 0px;
+	line-height: 120%;
+}
+
+@media (max-width: 1040px) {
+	h2{
+		font-size: 26px;
+	}
+}
+
+@media (max-width: 440px) {
+	h2{
+		font-size: 22px;
+	}
+}
+
+
+h2::before{
+	content: '';
+	display: inline-block;
+	height: 6px;
+	width: 50px;
+	background-color: $red;
+	color: $red;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+
 .wrapper {
 	min-height: 100vh;
 	display: flex;
@@ -63,11 +94,13 @@ footer {
 
 
 .footer,
-.carousel{
+.carousel,
+.products{
 	width: 100vw;
 }
 
-.footer__container{
+.footer__container,
+.products__container{
 	width: 100vw;
 	padding: 0 10vw;
 }
