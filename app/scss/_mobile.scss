@@ -7,7 +7,9 @@
    .certificates__container,
    .maps__container,
    .portfolio__container,
-   .contact-info__container {
+   .contact-info__container,
+   .products-page__container,
+   .chapter-page__container {
       padding: 10px 7vw;
    }
 }
@@ -18,7 +20,9 @@
    .faq,
    .maps,
    .portfolio,
-   .contact-info{
+   .contact-info,
+   .products-page__container,
+   .chapter-page{
       margin: 40px 0 10px;
    }
 }
@@ -32,7 +36,9 @@
    .certificates__container,
    .maps__container,
    .portfolio__container,
-   .contact-info__container {
+   .contact-info__container,
+   .products-page__container,
+   .chapter-page__container {
       padding: 10px 3vw;
    }
 }
@@ -305,6 +311,40 @@
    .contact-details {
       min-width: 100%;
    }
+}
+@media (max-width: 1240px) {
+   .chapter__category{
+      width: 30%;
+      h3 {
+         font-weight: 600;
+         font-size: 16px;
+      }
+   }
+}
+@media (max-width: 1040px) {
+   .chapter__category{
+      width: 47%;
+   }
+}
+@media (max-width: 590px) {
+   .chapter__category{
+      width: 100%;
+   }
+}
+
+@media (max-width: 768px) {
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 768px) {
 }
 @media (max-width: 768px) {
 }
