@@ -6,8 +6,20 @@
    .faq-container,
    .certificates__container,
    .maps__container,
-   .portfolio__container {
+   .portfolio__container,
+   .contact-info__container {
       padding: 10px 7vw;
+   }
+}
+
+@media (max-width: 1040px) {
+   .products,
+   .about,
+   .faq,
+   .maps,
+   .portfolio,
+   .contact-info{
+      margin: 40px 0 10px;
    }
 }
 
@@ -19,7 +31,8 @@
    .faq-container,
    .certificates__container,
    .maps__container,
-   .portfolio__container {
+   .portfolio__container,
+   .contact-info__container {
       padding: 10px 3vw;
    }
 }
@@ -240,45 +253,66 @@
 }
 
 @media (max-width: 768px) {
-   .products__category{
+   .products__category {
       width: 98%;
       min-width: 260px;
    }
 }
 
-@media (max-width: 768px){
-   .faq-item{
+@media (max-width: 768px) {
+   .faq-item {
       width: 100%;
    }
 }
 
-@media (max-width: 768px){
-   .faq-grid{
+@media (max-width: 768px) {
+   .faq-grid {
       row-gap: 10px;
    }
 }
-@media (max-width: 1240px){
-   .portfolio-item{
+@media (max-width: 1240px) {
+   .portfolio-item {
       width: 48%;
    }
 }
-@media (max-width: 768px){
-   .portfolio-item{
+@media (max-width: 768px) {
+   .portfolio-item {
       width: 100%;
    }
 }
-@media (max-width: 1240px){
-   .portfolio-grid{
+@media (max-width: 1240px) {
+   .portfolio-grid {
       row-gap: 40px;
       column-gap: 2%;
    }
 }
-@media (max-width: 768px){}
-@media (max-width: 768px){}
-@media (max-width: 768px){}
-@media (max-width: 768px){}
-@media (max-width: 768px){}
-@media (max-width: 768px){}
-@media (max-width: 768px){}
-@media (max-width: 768px){}
-@media (max-width: 768px){}
+@media (max-width: 768px) {
+   .contact-info__grid {
+      flex-direction: column;
+   }
+}
+@media (max-width: 768px) {
+   .contact-details__fact {
+      width: 100%;
+   }
+}
+@media (max-width: 768px) {
+   .contact__ur {
+      width: 100%;
+   }
+}
+@media (max-width: 768px) {
+   .contact-details {
+      min-width: 100%;
+   }
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 768px) {
+}

@@ -417,6 +417,7 @@
    }
    &__category:hover {
       border: 1px solid $light-blue;
+      transition: border 0.3s ease-in-out;
    }
 }
 
@@ -436,6 +437,7 @@
    }
    &__link:hover {
       border: 1px solid $light-blue;
+      transition: border 0.3s ease-in-out;
    }
    &__title {
       font-weight: 500;
@@ -453,7 +455,7 @@
 
 .faq {
    margin: 80px 0 40px;
-   &-grid{
+   &-grid {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
@@ -464,7 +466,7 @@
       margin-bottom: 10px;
       width: 49%;
    }
-   &-sign{
+   &-sign {
       position: relative;
       display: inline-block;
       right: 2%;
@@ -488,16 +490,19 @@
    transition: background-color 0.3s;
 
    &:hover {
-     background-color: darken(#015CAC, 10%);
+      background-color: darken(#015cac, 10%);
    }
- }
+}
 
- .faq-answer {
+.faq-answer {
    padding: 10px;
    max-height: 0;
    visibility: hidden; // Изначально делаем содержимое невидимым
    opacity: 0; // Устанавливаем прозрачность содержимого в ноль
-   transition: visibility 0s linear 0.3s, opacity 0.3s linear, max-height 0.3s ease;
+   transition:
+      visibility 0s linear 0.3s,
+      opacity 0.3s linear,
+      max-height 0.3s ease;
 
    &.active {
       visibility: visible; // Содержимое становится видимым
@@ -505,24 +510,22 @@
       max-height: 1000px; // Устанавливаем достаточно большое значение max-height
       transition-delay: 0s; // Убираем задержку при открытии
    }
- }
+}
 
- .maps{
+.maps {
    margin: 80px 0 40px;
- }
+}
 
- .yandex-maps{
-   iframe{
-      width: 100%!important;
+.yandex-maps {
+   iframe {
+      width: 100% !important;
       border: none;
    }
+}
 
- }
-
-
- .portfolio{
+.portfolio {
    margin: 80px 0 40px;
-   &-filter{
+   &-filter {
       width: 100%;
       display: flex;
       justify-content: space-between;
@@ -530,13 +533,13 @@
       flex-wrap: wrap;
       gap: 16px;
    }
-   &-grid{
+   &-grid {
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
       gap: 50px;
    }
-   &-item{
+   &-item {
       display: flex;
       flex-direction: column;
       width: 30%;
@@ -544,47 +547,92 @@
       box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
       border-radius: 6px;
       overflow: hidden;
-      &-title{
+      &-title {
          padding-left: 16px;
       }
    }
-   &-item:hover{
-      .portfolio-image{
+   &-item:hover {
+      .portfolio-image {
          transform: scale(1.2);
          transition: 0.2s ease-in-out;
       }
    }
-   &-image{
+   &-image {
       width: 100%;
-      &-wrapper{
+      &-wrapper {
          width: 100%;
          max-height: 260px;
          overflow: hidden;
       }
    }
-   &-link{
+   &-link {
       color: $white;
       background-color: $blue;
       width: 100%;
       padding: 16px;
       cursor: pointer;
    }
-   &-link:hover{
+   &-link:hover {
       color: $white;
       background-color: $light-blue;
       transition: 0.2s ease-in-out;
    }
- }
+}
 
- .filter-btn{
+.filter-btn {
    background: transparent;
    border: none;
    font-weight: 500;
-   &:hover{
+   &:hover {
       color: $light-blue;
       transition: color 0.2s ease-in-out;
    }
- }
+}
+
+.certificates__container {
+   position: relative;
+}
+
+.contact{
+   margin: 80px 0 40px;
+   &-info{
+      &__grid{
+         display: flex;
+         gap: 20px;
+      }
+   }
+   &-details__fact{
+      width: 50%;
+      address{
+         display: flex;
+         flex-direction: column;
+         gap: 10px;
+         a:hover{
+            color: $light-blue;
+         }
+      }
+   }
+   &-details__ur{
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+   }
+   &-details {
+      min-width: 50%;
+      border: 1px solid #cccccc;
+      padding: 20px;
+   }
+}
+
+
+
+
+
+
+
+
+
 
 
 @import "mobile";
