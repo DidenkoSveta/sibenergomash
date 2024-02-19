@@ -635,7 +635,7 @@
    margin-top: 20px;
 }
 
-.chapter{
+.chapter {
    &__grid {
       width: 100%;
       display: flex;
@@ -692,7 +692,7 @@
 }
 
 .articles {
-   &-page{
+   &-page {
       margin: 10px 0 40px;
    }
    &__grid {
@@ -714,7 +714,7 @@
       padding: 20px;
       border-radius: 5px;
       cursor: pointer;
-      img{
+      img {
          width: 60%;
       }
       h3 {
@@ -733,28 +733,28 @@
          transition: transform 0.3s ease-in-out;
       }
    }
-   &__info{
+   &__info {
       display: flex;
       flex-direction: column;
       width: 100%;
    }
-   &__price{
+   &__price {
       padding: 10px 0;
       display: flex;
       gap: 10px;
-      span{
+      span {
          font-weight: 600;
          font-size: 20px;
       }
    }
-   &__btn{
+   &__btn {
       display: flex;
       justify-content: space-between;
       width: 100%;
       align-items: center;
    }
-   &__compare{
-      background-image: url('../images/icons/balance.svg');
+   &__compare {
+      background-image: url("../images/icons/balance.svg");
       width: 30px;
       height: 30px;
       background-size: contain;
@@ -762,22 +762,22 @@
       border: none;
       background-color: transparent;
    }
-   &__compare:hover{
-      background-image: url('../images/icons/balance-hover.svg');
+   &__compare:hover {
+      background-image: url("../images/icons/balance-hover.svg");
       transition: background-image 0.2s ease-in-out;
    }
-   &__buy{
+   &__buy {
       padding: 6px 30px;
       background-color: $red;
       border: none;
       color: $white;
       border-radius: 3px;
    }
-   &__buy:hover{
+   &__buy:hover {
       background-color: $blue;
       transition: background-color 0.2s ease-in-out;
    }
-   &__text{
+   &__text {
       display: flex;
       width: 100%;
       justify-content: space-between;
@@ -787,4 +787,128 @@
    }
 }
 
+.product {
+   &-page {
+      margin: 40px 0;
+      h1 {
+         font-size: 28px;
+         line-height: 200%;
+         margin-bottom: 10px;
+      }
+   }
+   &__grid {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      row-gap: 40px;
+      column-gap: 20px;
+   }
+   &__card {
+      display: flex;
+      gap: 30px;
+   }
+   &-gallery {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      &__thumbnails {
+         display: flex;
+         gap: 10px;
+         img {
+            border: 1px solid #9898986b;
+            padding: 12px;
+            cursor: pointer;
+         }
+         img:hover {
+            border: 1px solid $red;
+            transition: border 0.2s ease-in-out;
+         }
+      }
+      &__main-image {
+         position: relative;
+         border: 1px solid #9898986b;
+         cursor: pointer;
+         a {
+            content: "";
+            display: block;
+            position: absolute;
+            right: 20px;
+            bottom: 10px;
+            background-image: url("../images/icons/scale.svg");
+            height: 30px;
+            width: 30px;
+            background-size: contain;
+            background-repeat: no-repeat;
+         }
+         a:hover {
+            opacity: 0.7;
+            transition: opacity 0.2s ease-in-out;
+         }
+      }
+      &__main-image:hover {
+         border: 1px solid $light-blue;
+         transition: border 0.2s ease-in-out;
+      }
+   }
+   &-basis {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      width: 500px;
+   }
+   &-property {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      background-color: #1986e511;
+      padding: 20px;
+      width: 100%;
+      &__title {
+         font-weight: 600;
+         text-transform: uppercase;
+         padding-bottom: 10px;
+      }
+      &__text {
+         width: 100%;
+         display: flex;
+         justify-content: space-between;
+         border-bottom: 1px dotted $gray;
+         padding-bottom: 5px;
+      }
+   }
+   &-order {
+      font-size: 20px;
+      display: flex;
+      gap: 10px;
+      span {
+         font-size: 22px;
+         color: $blue;
+         font-weight: 600;
+      }
+      &__btn {
+         display: flex;
+         flex-direction: column;
+         gap: 10px;
+      }
+      &__button {
+         padding: 6px 30px;
+         background-color: $red;
+         border: none;
+         color: $white;
+         border-radius: 3px;
+      }
+      &__button:hover {
+         background-color: $blue;
+         transition: background-color 0.2s ease-in-out;
+      }
+      &__offert {
+         font-size: 13px;
+         a:hover {
+            color: $blue;
+            transition: color 0.2s ease-in-out;
+         }
+      }
+   }
+}
 @import "mobile";
