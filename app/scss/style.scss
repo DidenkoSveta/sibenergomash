@@ -635,7 +635,7 @@
    margin-top: 20px;
 }
 
-.chapter {
+.chapter{
    &__grid {
       width: 100%;
       display: flex;
@@ -688,6 +688,102 @@
          transform: scale(0.9);
          transition: transform 0.3s ease-in-out;
       }
+   }
+}
+
+.articles {
+   &-page{
+      margin: 10px 0 40px;
+   }
+   &__grid {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      row-gap: 40px;
+      column-gap: 10px;
+      margin: 20px 0;
+   }
+   &__category {
+      width: 24%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      border: 1px solid #ebebeb;
+      padding: 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      img{
+         width: 60%;
+      }
+      h3 {
+         font-weight: 600;
+         font-size: 20px;
+      }
+   }
+   &__category:hover {
+      border: 1px solid $light-blue;
+      transition: border 0.2s ease-in-out;
+      h3 {
+         color: $light-blue;
+      }
+      img {
+         transform: scale(0.95);
+         transition: transform 0.3s ease-in-out;
+      }
+   }
+   &__info{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+   }
+   &__price{
+      padding: 10px 0;
+      display: flex;
+      gap: 10px;
+      span{
+         font-weight: 600;
+         font-size: 20px;
+      }
+   }
+   &__btn{
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      align-items: center;
+   }
+   &__compare{
+      background-image: url('../images/icons/balance.svg');
+      width: 30px;
+      height: 30px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      border: none;
+      background-color: transparent;
+   }
+   &__compare:hover{
+      background-image: url('../images/icons/balance-hover.svg');
+      transition: background-image 0.2s ease-in-out;
+   }
+   &__buy{
+      padding: 6px 30px;
+      background-color: $red;
+      border: none;
+      color: $white;
+      border-radius: 3px;
+   }
+   &__buy:hover{
+      background-color: $blue;
+      transition: background-color 0.2s ease-in-out;
+   }
+   &__text{
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      font-size: 13px;
+      padding: 4px 0;
+      border-bottom: 1px dotted #555555;
    }
 }
 

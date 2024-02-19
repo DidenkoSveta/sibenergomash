@@ -335,8 +335,29 @@
    }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1240px) {
+   .articles__category{
+      width: 32%;
+   }
 }
+
+@media (max-width: 768px) {
+   .articles-page{
+      margin: 0px 0 20px;
+   }
+}
+@media (max-width: 768px) {
+   .articles__category{
+      width: 48%;
+   }
+}
+
+@media (max-width: 490px) {
+   .articles__category{
+      width: 100%;
+   }
+}
+
 @media (max-width: 768px) {
 }
 @media (max-width: 768px) {
