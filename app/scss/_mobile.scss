@@ -11,7 +11,8 @@
    .products-page__container,
    .chapter-page__container,
    .articles-page__container,
-   .product-page__container {
+   .product-page__container,
+   .product-available {
       padding: 10px 7vw;
    }
 }
@@ -26,7 +27,8 @@
    .products-page__container,
    .chapter-page,
    .articles-page,
-   .product-page{
+   .product-page,
+   .product{
       margin: 40px 0 10px;
    }
 }
@@ -44,7 +46,8 @@
    .products-page__container,
    .chapter-page__container,
    .articles-page__container,
-   .product-page__container {
+   .product-page__container,
+   .product-available {
       padding: 10px 3vw;
    }
 }
@@ -379,8 +382,16 @@
       }
 }
 @media (max-width: 768px) {
+   .product-available__title{
+      font-size: 16px;
+      text-align: center;
+      margin-bottom: 10px;
+   }
 }
 @media (max-width: 768px) {
+   .available {
+      margin: 30px 0 20px;
+   }
 }
 @media (max-width: 768px) {
 }
