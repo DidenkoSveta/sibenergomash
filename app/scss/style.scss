@@ -414,6 +414,12 @@
       border-radius: 5px;
       overflow: hidden;
       cursor: pointer;
+      &-services {
+         width: 32%;
+         .category__title {
+            color: $blue;
+         }
+      }
    }
    &__category:hover {
       border: 1px solid $light-blue;
@@ -1020,7 +1026,7 @@
       display: flex;
       flex-direction: column;
       gap: 20px;
-      &__table{
+      &__table {
          background-color: #1986e51c;
          padding: 20px 10px;
       }
@@ -1036,8 +1042,68 @@
       &__row:nth-child(2n) {
          background-color: $white;
       }
-      &__cell{
+      &__cell {
          padding: 6px 6px;
+      }
+   }
+}
+.single__services {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   &-contact{
+      margin-top: 50px;
+   }
+   &-lists {
+      li {
+         list-style-type: decimal;
+         margin-left: 30px;
+      }
+   }
+   &-grid {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      row-gap: 30px;
+   }
+   &-card {
+      width: 33%;
+      border: 1px solid #1986e546;
+      border-radius: 10px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+      justify-content: center;
+      p {
+         text-align: center;
+      }
+      a {
+         color: $blue;
+      }
+   }
+   &-name {
+      font-weight: 600;
+      margin-bottom: 10px;
+   }
+   &-form {
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      button {
+         width: 100%;
+         margin-top: 10px;
+         border: none;
+         background-color: $blue;
+         color: $white;
+         padding: 8px 20px;
+      }
+      input {
+         width: 100%;
+         padding: 6px 20px;
+         border: 1px solid $light-blue;
       }
    }
 }
