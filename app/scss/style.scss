@@ -397,9 +397,9 @@
    &__categories {
       display: flex;
       width: 100%;
-      justify-content: space-between;
+      justify-content: flex-start;
       flex-wrap: wrap;
-      column-gap: 10px;
+      column-gap: 15px;
       row-gap: 30px;
    }
    &__category {
@@ -910,81 +910,108 @@
          }
       }
    }
-   &-description{
+   &-description {
       background-color: #1986e51c;
       padding: 20px;
       display: flex;
       flex-direction: column;
       gap: 12px;
-      &__title{
+      &__title {
          font-size: 20px;
          margin-bottom: 10px;
       }
-      &__list{
+      &__list {
          position: relative;
          display: flex;
          flex-direction: column;
          gap: 4px;
-         li{
+         li {
             list-style-type: disc;
             margin-left: 40px;
          }
       }
    }
-   &-context{
+   &-context {
       display: flex;
       flex-direction: column;
       gap: 12px;
-      p>a{
+      p > a {
          font-weight: 800;
       }
-      p>a:hover{
+      p > a:hover {
          color: $blue;
          transition: color 0.2s ease-in-out;
       }
    }
-   &-specs{
+   &-specs {
       width: 100%;
       background-color: #1986e51c;
       padding: 20px;
       gap: 12px;
-      &__table{
+      &__table {
          width: 100%;
          display: flex;
          flex-direction: column;
          margin-top: 10px;
       }
-      &__row{
+      &__row {
          width: 100%;
          display: flex;
-         justify-content:flex-start;
-         &-head{
+         justify-content: flex-start;
+         &-head {
             background-color: #1986e559;
             padding: 10px 5px 15px;
          }
       }
-      &__row:nth-child(2n){
+      &__row:nth-child(2n) {
          background-color: $white;
       }
-      &__header{
+      &__header {
          width: 60%;
          text-align-last: left;
       }
-      &__cell{
+      &__cell {
          width: 60%;
          padding: 8px;
-         &-value{
+         &-value {
             width: 40%;
          }
       }
-      &__header-value{
+      &__header-value {
          width: 40%;
       }
    }
 }
 
-.articles-page__text{
+.articles-page__text {
    margin-top: 20px;
    font-weight: 200;
 }
+
+.products__category-spares{
+   gap: 30px;
+   padding-top: 40px;
+   cursor: pointer;
+   .category__title{
+      font-size: 22px;
+   }
+   img{
+      height: 260px;
+   }
+
+}
+
+.products__category-spares:hover{
+   .category__title{
+      font-size: 22px;
+   }
+   img{
+      height: 250px;
+      transition: height 0.3s ease-in-out;
+   }
+
+}
+
+
+
 @import "mobile";

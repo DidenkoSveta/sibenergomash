@@ -264,6 +264,18 @@
    }
 }
 
+@media (max-width: 1240px) {
+   .products__category {
+      width: 32%;
+   }
+}
+
+@media (max-width: 1040px) {
+   .products__category {
+      width: 45%;
+   }
+}
+
 @media (max-width: 768px) {
    .products__category {
       width: 98%;
@@ -362,6 +374,9 @@
 }
 
 @media (max-width: 768px) {
+   .category__list {
+         gap: 12px;
+      }
 }
 @media (max-width: 768px) {
 }
@@ -383,3 +398,4 @@
 }
 @media (max-width: 768px) {
 }
+
