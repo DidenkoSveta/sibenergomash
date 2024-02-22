@@ -1051,7 +1051,7 @@
    display: flex;
    flex-direction: column;
    gap: 20px;
-   &-contact{
+   &-contact {
       margin-top: 50px;
    }
    &-lists {
@@ -1100,10 +1100,41 @@
          color: $white;
          padding: 8px 20px;
       }
+      button:hover {
+         background-color: $light-blue;
+         transition: background-color 0.3s ease-in-out;
+      }
       input {
          width: 100%;
          padding: 6px 20px;
          border: 1px solid $light-blue;
+      }
+   }
+}
+
+.purchases {
+   &__services {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      &-lists {
+         display: flex;
+         flex-direction: column;
+         gap: 6px;
+      }
+      &-list {
+         list-style-type: disc;
+         margin-left: 36px;
+      }
+      &-text{
+         a{
+            font-weight: 600;
+            color: $blue;
+         }
+         a:hover{
+            color: $light-blue;
+            transition: color 0.3s ease-in-out;
+         }
       }
    }
 }
