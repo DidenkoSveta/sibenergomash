@@ -33,6 +33,22 @@
    }
 }
 
+@media (max-width: 490px) {
+   .products,
+   .about,
+   .faq,
+   .maps,
+   .portfolio,
+   .contact-info,
+   .products-page__container,
+   .chapter-page,
+   .articles-page,
+   .product-page,
+   .product {
+      margin: 20px 0 10px;
+   }
+}
+
 @media (max-width: 1440px) {
    .header__top-bar,
    .footer__container,
@@ -407,6 +423,47 @@
    .single__services-contact {
       margin-top: 30px;
    }
+}
+@media (max-width: 1040px) {
+   .about__services-grid{
+      column-gap: 20px;
+      row-gap: 40px;
+      img{
+         height: 50px;
+      }
+   }
+}
+
+@media (max-width: 490px) {
+   .about__services-grid{
+      column-gap: 0px;
+      row-gap: 20px;
+      img{
+         height: 40px;
+      }
+   }
+}
+@media (max-width: 768px) {
+   .about__container{
+      gap: 10px;
+   }
+}
+@media (max-width: 1040px) {
+   .about__services{
+      gap: 16px;
+   }
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 768px) {
 }
 @media (max-width: 768px) {
 }
