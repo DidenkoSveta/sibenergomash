@@ -563,40 +563,72 @@
 }
 @media (max-width: 1240px) {
    .vacancy__card-img,
-   .vacancy__btn{
+   .vacancy__btn {
       width: 80%;
    }
 }
 @media (max-width: 900px) {
-   .vacancy__card{
+   .vacancy__card {
       width: 44%;
    }
 }
 
 @media (max-width: 490px) {
-   .vacancy__card{
+   .vacancy__card {
       width: 100%;
    }
 }
 
 @media (max-width: 490px) {
-   .vacancy__btn{
+   .vacancy__btn {
       margin: 16px 0;
    }
 }
 
 @media (max-width: 490px) {
-   .vacancy__card-img{
+   .vacancy__card-img {
       height: 140px;
    }
 }
 
+@media (max-width: 768px) {
+   .product-reference__row {
+      gap: 20px;
+   }
+}
+@media (max-width: 768px) {
+   .product-reference {
+      &__header:nth-child(2),
+      &__cell:nth-child(2),
+      &__header:nth-child(3),
+      &__cell:nth-child(3) {
+         width: 35%;
+         overflow-wrap: break-word;
+      }
+      &__header:nth-child(1),
+      &__cell:nth-child(1) {
+         width: 20%;
+         overflow-wrap: break-word;
+      }
+   }
+}
 
-@media (max-width: 1040px) {
+@media (max-width: 768px) {
+   .product-reference__header {
+      font-size: 12px;
+   }
 }
-@media (max-width: 1040px) {
+@media (max-width: 768px) {
+   .product-reference__table {
+      padding: 0;
+   }
 }
-@media (max-width: 1040px) {
+
+@media (max-width: 768px) {
+   .product-reference__togle {
+      white-space: nowrap;
+      transform: translateX(-50px);
+   }
 }
 @media (max-width: 1040px) {
 }
