@@ -127,7 +127,8 @@ footer {
 .chapter-page,
 .articles-page,
 .product-page,
-.product{
+.product,
+.blog-page{
 	width: 100vw;
 }
 
@@ -143,7 +144,8 @@ footer {
 .chapter-page__container,
 .articles-page__container,
 .product-page__container,
-.product-available{
+.product-available,
+.blog-page__container{
 	width: 100vw;
 	padding: 0 10vw;
 }

@@ -12,7 +12,8 @@
    .chapter-page__container,
    .articles-page__container,
    .product-page__container,
-   .product-available {
+   .product-available,
+   .blog-page__container {
       padding: 10px 7vw;
    }
 }
@@ -28,7 +29,8 @@
    .chapter-page,
    .articles-page,
    .product-page,
-   .product {
+   .product,
+   .blog-page {
       margin: 40px 0 10px;
    }
 }
@@ -44,7 +46,8 @@
    .chapter-page,
    .articles-page,
    .product-page,
-   .product {
+   .product,
+   .blog-page {
       margin: 20px 0 10px;
    }
 }
@@ -63,7 +66,8 @@
    .chapter-page__container,
    .articles-page__container,
    .product-page__container,
-   .product-available {
+   .product-available,
+   .blog-page__container {
       padding: 10px 3vw;
    }
 }
@@ -425,40 +429,88 @@
    }
 }
 @media (max-width: 1040px) {
-   .about__services-grid{
+   .about__services-grid {
       column-gap: 20px;
       row-gap: 40px;
-      img{
+      img {
          height: 50px;
       }
    }
 }
 
 @media (max-width: 490px) {
-   .about__services-grid{
+   .about__services-grid {
       column-gap: 0px;
       row-gap: 20px;
-      img{
+      img {
          height: 40px;
       }
    }
 }
 @media (max-width: 768px) {
-   .about__container{
+   .about__container {
       gap: 10px;
    }
 }
 @media (max-width: 1040px) {
-   .about__services{
+   .about__services {
       gap: 16px;
    }
 }
-@media (max-width: 768px) {
+
+@media (max-width: 800px) {
+   .blog__wrapper {
+      flex-direction: column;
+      img {
+         width: 100%;
+         height: auto;
+      }
+   }
 }
-@media (max-width: 768px) {
+
+@media (max-width: 800px) {
+   .blog__card {
+      overflow: hidden;
+      max-height: 530px;
+      width: 47%;
+   }
 }
-@media (max-width: 768px) {
+
+@media (max-width: 490px) {
+   .blog__card {
+      overflow: hidden;
+      max-height: 530px;
+      width: 90%;
+   }
 }
+
+@media (max-width: 800px) {
+   .blog__card-img {
+      width: 100%;
+      height: 240px;
+      overflow: hidden;
+   }
+}
+@media (max-width: 800px) {
+   .blog__post-description{
+      width: 100%;
+      padding: 20px;
+
+   }
+}
+@media (max-width: 800px) {
+   .blog__grid{
+      column-gap: 5%;
+      row-gap: 30px;
+   }
+}
+
+@media (max-width: 490px) {
+   .blog__grid{
+      justify-content: center;
+   }
+}
+
 @media (max-width: 768px) {
 }
 @media (max-width: 768px) {

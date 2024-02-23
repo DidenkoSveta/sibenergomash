@@ -1126,12 +1126,12 @@
          list-style-type: disc;
          margin-left: 36px;
       }
-      &-text{
-         a{
+      &-text {
+         a {
             font-weight: 600;
             color: $blue;
          }
-         a:hover{
+         a:hover {
             color: $light-blue;
             transition: color 0.3s ease-in-out;
          }
@@ -1140,7 +1140,7 @@
 }
 
 .about {
-   &__container{
+   &__container {
       display: flex;
       flex-direction: column;
       gap: 50px;
@@ -1149,7 +1149,7 @@
       display: flex;
       flex-direction: column;
       gap: 30px;
-      &-grid{
+      &-grid {
          overflow: hidden;
          width: 100%;
          display: flex;
@@ -1167,17 +1167,71 @@
          list-style-type: disc;
          margin-left: 36px;
       }
-      &-text{
+      &-text {
          width: 100%;
-         a{
+         a {
             font-weight: 600;
             color: $blue;
          }
-         a:hover{
+         a:hover {
             color: $light-blue;
             transition: color 0.3s ease-in-out;
          }
       }
+   }
+}
+
+.blog {
+   &-page {
+      margin: 40px 0;
+   }
+   &__grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      margin: 40px 0;
+   }
+   &__card {
+      overflow: hidden;
+      max-height: 300px;
+      width: 47%;
+      box-shadow: 0 0 8px #00000027;
+      border: 1px solid $white;
+      cursor: pointer;
+   }
+   &__card:hover {
+      border: 1px solid #1986e546;
+      transition: border 0.3s ease-in-out;
+   }
+   &__wrapper {
+      width: 100%;
+      display: flex;
+      justify-content: start;
+      img {
+         width: auto;
+         height: 200px;
+      }
+      &-img {
+         width: 32%;
+      }
+   }
+   &__post-description {
+      padding: 20px 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      width: 68%;
+      max-height: 300px;
+   }
+   &_time {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+   }
+   &__text {
+      width: 100%;
+      display: inline-block;
+      overflow-wrap: break-word;
    }
 }
 
