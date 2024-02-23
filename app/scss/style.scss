@@ -1227,6 +1227,35 @@
       display: flex;
       justify-content: space-between;
       width: 100%;
+      &-data{
+         display: flex;
+         align-items: center;
+      }
+      &-data::before{
+         content: "";
+         display: block;
+         background-image: url("../images/icons/time.svg");
+         height: 15px;
+         width: 15px;
+         background-size: contain;
+         background-repeat: no-repeat;
+         margin-right: 5px;
+      }
+      &-see{
+         display: flex;
+         align-items: center;
+         
+      }
+      &-see::before{
+         content: "";
+         display: block;
+         background-image: url("../images/icons/see.svg");
+         height: 15px;
+         width: 15px;
+         background-size: contain;
+         background-repeat: no-repeat;
+         margin-right: 5px;
+      }
    }
    &__text {
       width: 100%;
