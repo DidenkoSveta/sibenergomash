@@ -1370,4 +1370,14 @@
    }
 }
 
+.vacantion-page__lists{
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   li{
+      margin-left: 40px;
+      list-style-type: disc;
+   }
+}
+
 @import "mobile";
