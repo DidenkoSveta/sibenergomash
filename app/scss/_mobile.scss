@@ -561,7 +561,46 @@
       font-size: 20px;
    }
 }
-@media (max-width: 768px) {
+@media (max-width: 1240px) {
+   .vacancy__card-img,
+   .vacancy__btn{
+      width: 80%;
+   }
+}
+@media (max-width: 900px) {
+   .vacancy__card{
+      width: 44%;
+   }
+}
+
+@media (max-width: 490px) {
+   .vacancy__card{
+      width: 100%;
+   }
+}
+
+@media (max-width: 490px) {
+   .vacancy__btn{
+      margin: 16px 0;
+   }
+}
+
+@media (max-width: 490px) {
+   .vacancy__card-img{
+      height: 140px;
+   }
+}
+
+
+@media (max-width: 1040px) {
+}
+@media (max-width: 1040px) {
+}
+@media (max-width: 1040px) {
+}
+@media (max-width: 1040px) {
+}
+@media (max-width: 1040px) {
 }
 @media (max-width: 768px) {
 }
