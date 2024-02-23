@@ -128,7 +128,8 @@ footer {
 .articles-page,
 .product-page,
 .product,
-.blog-page{
+.blog-page,
+.post-page{
 	width: 100vw;
 }
 
@@ -145,7 +146,8 @@ footer {
 .articles-page__container,
 .product-page__container,
 .product-available,
-.blog-page__container{
+.blog-page__container,
+.post-page__container{
 	width: 100vw;
 	padding: 0 10vw;
 }

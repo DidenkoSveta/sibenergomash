@@ -1,128 +1,41 @@
 @@include('./templates-parts/header.html')
-<section class="product-page">
-   <div class="product-page__container">
-      <h1 class="product-page__title">Бак БНВ-1,6</h1>
-      <div class="product__grid">
-         <div class="product__card">
-            <div class="product-gallery">
-               <div class="product-gallery__main-image">
-                  <img src="images/img/product/product-001.jpg" alt="Бак БНВ-1,6" class="product-gallery__thumbnail"
-                     onclick="changeImage('images/img/articles/articles-001.jpg')">
-                  <a href="#mainImage" class="product-gallery__zoom-icon" onclick="openGallery(event)"></a>
-               </div>
-               <div class="product-gallery__thumbnails">
-                  <img src="images/img/product/product-thumbnail-001.jpg" alt="Бак БНВ-1,6"
-                     class="product-gallery__thumbnail" onclick="changeImage('images/img/product/product-001.jpg')">
-                  <img src="images/img/product/product-thumbnail-001.jpg" alt="Бак БНВ-1,6"
-                     class="product-gallery__thumbnail" onclick="changeImage('images/img/product/product-001.jpg')">
-                  <img src="images/img/product/product-thumbnail-001.jpg" alt="Бак БНВ-1,6"
-                     class="product-gallery__thumbnail" onclick="changeImage('images/img/product/product-001.jpg')">
-               </div>
-            </div>
+<section class="post-page">
+   <div class="post-page__container">
+      <div class="post-page__grid">
+         <img src="images/img/blog/post__001.jpg" class="post-page__img">
+         <div class="post-page__description">
+            <h1 class="post-page__title">Фильтры ФИПа I и ФИПа II</h1>
+            <div class="post-page__about">Фильтр ФИПа I 2.6-0.6 с АКЗ в количестве 2 шт. и Фильтр ФИПа II 2.6-0.6 с АКЗ
+               в количестве 2 шт отправлены г. Мариуполь.</div>
+            <div class="post-page__lists">
 
-            <div class="product-basis">
-               <div class="product-property">
-                  <p class="product-property__title">Основные характеристики</p>
-                  <p class="product-property__text">Габаритные размеры (Высота, мм)<span>2566</span></p>
-                  <p class="product-property__text">Условный диаметр, мм<span>1016</span></p>
-                  <p class="product-property__text">Масса, кг<span>630</span></p>
+               <div class="post-page__left">
+                  <div class="post-page__list">Город</div>
+                  <div class="post-page__list">Год реализации</div>
+                  <div class="post-page__list">Продукция</div>
                </div>
-               <div class="product-order"><span>Цена:</span>по запросу<span>с НДС 20%</span></div>
-               <div class="product-order__btn">
-                  <button class="product-order__button">Оставить заявку</button>
-                  <p class="product-order__offert">
-                     *Цена может меняться и не является публичной офертой. <br>
-                     Уточняйте стоимость по email <a href="mailto:zakaz@tpkspem.ru">zakaz@tpkspem.ru</a>
-                  </p>
+
+               <div class="post-page__right">
+                  <div class="post-page__list">Мариуполь</div>
+                  <div class="post-page__list">2023</div>
+                  <div class="post-page__list post-page__info">
+                     <a href="#" class="post-page__link">
+                        Фильтр ФИПа I 2.6-0.6
+                     </a>
+                     <a href="#" class="post-page__link">
+                        Фильтр ФИПа II 2.6-0.6
+                     </a>
+                  </div>
                </div>
             </div>
+            <a href="" class="post-page__btn">
+               Запросить коммерческое предложение
+            </a>
          </div>
-         <div class="product-description">
-            <h2 class="product-description__title">Описание</h2>
-            <div class="product-description__text">
-               Бак-вытеснитель крепкой серной кислоты БНВ-1,6 Котельного Завода «СИБПРОМЭНЕРГОМАШ» предназначен для
-               подачи
-               серной кислоты в мерники и используется на водоподготовительных установках электростанций, промышленных и
-               отопительных котельных.
-            </div>
-            <div class="product-description__text">Бак вытеснитель БНВ-1,6 состоит из:</div>
-            <ul class="product-description__list">
-               <li class="product-description__item">вертикального цилиндрического сварного корпуса с приваренными
-                  эллиптическими днищами</li>
-               <li class="product-description__item">трёх опор для установки бака на фундамент, приваренных к нижнему
-                  днищу
-               </li>
-               <li class="product-description__item">трёх штуцеров, приваренных к верхнему днищу</li>
-               <li class="product-description__item">люка в верхнем днище для заполнения бака кислотой.</li>
-            </ul>
-            <div class="product-description__text">
-               Крепкая серная кислота заливается в аппарат через люк в верхней крышке бака вытеснителя БНВ-1,6. Крышка
-               люка герметично закрывается. В бак подаётся сжатый воздух и кислота выдавливается в мерник. Избыток
-               воздуха из бака опускается через воздушник.
-            </div>
-            <div class="product-description__text">Корпус бака БНВ-1,6 и все детали выполняются из углеродистой стали.
-            </div>
-         </div>
-         <div class="product-specs">
-            <h2 class="product-description__title">Характеристики</h2>
-            <table class="product-specs__table">
-               <tr class="product-specs__row product-specs__row-head">
-                  <th class="product-specs__header">Характеристики ВПУ-6.0</th>
-                  <th class="product-specs__header product-specs__header-value">Значение</th>
-               </tr>
-               <tr class="product-specs__row">
-                  <td class="product-specs__cell">Габаритные размеры (Длина, мм)</td>
-                  <td class="product-specs__cell product-specs__cell-value">2565</td>
-               </tr>
-               <tr class="product-specs__row">
-                  <td class="product-specs__cell">Габаритные размеры (Высота, мм)</td>
-                  <td class="product-specs__cell product-specs__cell-value">2460</td>
-               </tr>
-               <tr class="product-specs__row">
-                  <td class="product-specs__cell">Габаритные размеры (Условный диаметр, мм)</td>
-                  <td class="product-specs__cell product-specs__cell-value">1190</td>
-               </tr>
-               <tr class="product-specs__row">
-                  <td class="product-specs__cell">Габаритные размеры (Условный диаметр, мм)</td>
-                  <td class="product-specs__cell product-specs__cell-value">1190</td>
-               </tr>
-               <tr class="product-specs__row">
-                  <td class="product-specs__cell">Габаритные размеры (Условный диаметр, мм)</td>
-                  <td class="product-specs__cell product-specs__cell-value">1190</td>
-               </tr>
-               <tr class="product-specs__row">
-                  <td class="product-specs__cell">Габаритные размеры (Условный диаметр, мм)</td>
-                  <td class="product-specs__cell product-specs__cell-value">1190</td>
-               </tr>
-               <tr class="product-specs__row">
-                  <td class="product-specs__cell">Габаритные размеры (Условный диаметр, мм)</td>
-                  <td class="product-specs__cell product-specs__cell-value">1190</td>
-               </tr>
-            </table>
-         </div>
-
-         <div class="product-context">
-            <p class="product-context__title">Бак БНВ-1,6 Бийского котельного завода «СИБПРОМЭНЕРГОМАШ» в наличии или
-               под
-               заказ
-               по индивидуальному техническому заданию Заказчика. Сертификаты качества на производство котельного и
-               котельно-вспомогательного оборудования. Без посредников и переплат. Доставка по России и в страны СНГ.
-            </p>
-            <p class="product-context__text">На нашем официальном сайте вы можете купить Бак БНВ-1,6 по выгодной цене
-               через форму обратной связи или заказать по телефону <a href="tel:+79628112699"
-                  class="product-context__tel">+7(962)
-                  811-26-99</a></p>
-            <p class="product-context__text">Срок изготовления можете уточнить в отделе приёма заявок по указанному
-               телефону или по электронной почте <a href="mailto:zakaz@tpkspem.ru"
-                  class="product-context__mail">zakaz@tpkspem.ru</a> На всю продукцию имеется сертификат качества.
-               Заявки
-               принимаем по всей территории России.</p>
-         </div>
-
       </div>
-      <p class="articles-page__text">*Цены, указанные на сайте, могут меняться. Точную стоимость узнавайте у наших
-         операторов.</p>
+      <div class="post-page__text">Фильтр ФИПа I 2.6-0.6 с АКЗ в количестве 2 шт. и Фильтр ФИПа II 2.6-0.6 с АКЗ в
+         количестве 2 шт. Данное оборудование направлено в г. Мариуполь для восстановления котельной города.</div>
+
    </div>
 </section>
 @@include('./templates-parts/footer.html')
-
