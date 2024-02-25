@@ -1423,7 +1423,28 @@
 }
 
 
-
+.questionnaire{
+   &-page{
+      margin: 60px 0;
+      &__container{
+         display: flex;
+         flex-direction: column;
+         gap: 20px;
+      }
+   }
+   &__title,
+   &__subtitle{
+      max-width: 800px;
+   }
+   &__content{
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+   }
+   &__iframe{
+      width: 650px;
+   }
+}
 
 
 
