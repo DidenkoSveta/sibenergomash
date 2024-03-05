@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
      direction: 'horizontal',
      loop: true,
      autoplay: {
-       delay: 3000,
+       delay: 6000,
      },
  
      // If you need pagination

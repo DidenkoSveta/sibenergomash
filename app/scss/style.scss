@@ -242,6 +242,66 @@
    }
 }
 
+.promo {
+   &__container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+      color: $white;
+      &-img{
+         z-index: 1;
+      }
+   }
+   &__list {
+      font-size: 22px;
+      line-height: 140%;
+      display: flex;
+      align-items: center;
+   }
+   &__list::before {
+      content: "";
+      display: inline-block;
+      background-image: url("../images/icons/check-promo.svg");
+      height: 24px;
+      width: 24px;
+      margin-right: 6px;
+   }
+   &__subtitle {
+      margin-top: 10px;
+      font-weight: 200;
+   }
+   &__title {
+      width: 615px;
+      color: $white;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      z-index: 2;
+      h1 {
+         font-size: 38px;
+         width: 550px;
+         line-height: 130%;
+         letter-spacing: 0.01em;
+         text-transform: uppercase;
+      }
+   }
+   &__advanced {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      &-item {
+         display: flex;
+         align-items: center;
+         gap: 8px;
+         width: 276px;
+         p {
+            font-weight: 300;
+         }
+      }
+   }
+}
+
 .footer {
    background-color: $black;
    color: $white;
@@ -1383,75 +1443,66 @@
    }
 }
 
-.product-reference{
-   &__header{
+.product-reference {
+   &__header {
       text-align: left;
       display: inline-block;
       margin-bottom: 20px;
    }
-   &__row{
+   &__row {
       display: flex;
       gap: 40px;
       padding: 14px 10px;
       justify-content: center;
    }
-   &__table{
+   &__table {
       background-color: #a9cff033;
       padding: 20px 10px;
    }
-   &__cell{
+   &__cell {
       vertical-align: middle;
    }
-   &__togle{
+   &__togle {
       text-align: center;
       font-weight: 800;
       width: 100%;
    }
-   &__row:nth-child(2n){
+   &__row:nth-child(2n) {
       background-color: $white;
    }
    &__header:nth-child(1),
    &__cell:nth-child(1),
    &__header:nth-child(2),
-   &__cell:nth-child(2){
+   &__cell:nth-child(2) {
       width: 40%;
    }
    &__header:nth-child(3),
-   &__cell:nth-child(3){
+   &__cell:nth-child(3) {
       width: 20%;
    }
 }
 
-
-.questionnaire{
-   &-page{
+.questionnaire {
+   &-page {
       margin: 60px 0;
-      &__container{
+      &__container {
          display: flex;
          flex-direction: column;
          gap: 20px;
       }
    }
    &__title,
-   &__subtitle{
+   &__subtitle {
       max-width: 800px;
    }
-   &__content{
+   &__content {
       display: flex;
       align-items: flex-start;
       justify-content: flex-start;
    }
-   &__iframe{
+   &__iframe {
       width: 650px;
    }
 }
-
-
-
-
-
-
-
-
 
 @import "mobile";
