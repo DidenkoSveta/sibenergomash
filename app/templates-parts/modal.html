@@ -1,0 +1,38 @@
+<!-- Кнопка для вызова формы -->
+<button id="openModal" class="articles__buy">Оставить заявку</button>
+
+<!-- Модальное окно -->
+<div id="feedbackModal" class="modal">
+   <!-- Контент модального окна -->
+   <div class="modal-content">
+      <span class="close">&times;</span>
+      <form id="feedbackForm">
+         <p class="modal__title">Заказать</p>
+         <p class="modal__product">Бак БНВ-1,6</p>
+         <div class="modal__group modal__group-upp">
+            <div class="modal__item">
+               <label for="name">Контактное лицо</label>
+               <input type="text" id="name" name="name" required>
+            </div>
+            <div class="modal__item">
+               <label for="email">Email*</label>
+               <input type="email" id="email" name="email" required>
+            </div>
+         </div>
+         <div class="modal__group">
+            <label for="phone">Телефон*</label>
+            <input type="tel" id="phone" name="phone" required>
+         </div>
+         <div class="modal__group">
+            <label for="comments">Комментарий</label>
+            <textarea id="comments" name="comments"></textarea>
+         </div>
+         <div class="modal__conset">
+            <input type="checkbox" id="consent" name="consent" required>
+            <label for="consent">Я даю свое согласие на обработку персональных данных</label>
+         </div>
+         <button class="modal-btn" type="submit">Отправить</button>
+         <div id="feedbackMessage" class="feedback-message" style="display:none;">Спасибо, мы с вами свяжемся в ближайшее время!</div> 
+      </form>
+   </div>
+</div>

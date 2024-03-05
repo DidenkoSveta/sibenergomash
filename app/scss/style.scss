@@ -249,7 +249,7 @@
       align-items: center;
       height: 100%;
       color: $white;
-      &-img{
+      &-img {
          z-index: 1;
       }
    }
@@ -1504,5 +1504,109 @@
       width: 650px;
    }
 }
+
+/* Стиль модального окна */
+.modal {
+   // display: none; /* Скрыто по умолчанию */
+   position: fixed; /* Остается на месте даже при прокрутке */
+   z-index: 1000; /* Сидит над другим контентом */
+   left: 0;
+   top: 0;
+   width: 100%; /* Полная ширина */
+   height: 100%; /* Полная высота */
+   overflow: auto; /* Включите прокрутку, если нужно */
+   background-color: rgb(0,0,0); /* Цвет фона */
+   background-color: rgba(0,0,0,0.4); /* Черный с прозрачностью */
+ }
+ 
+ /* Стиль контента модального окна */
+ .modal-content {
+   background-color: #fefefe;
+   margin: 10% auto; 
+   padding: 20px;
+   border: 1px solid #888;
+   width: 600px; 
+   border-radius: 10px;
+ }
+
+ .modal__product{
+   font-size: 28px;
+   margin-bottom: 30px;
+ }
+
+ .modal__title{
+   font-size: 20px;
+   margin-bottom: 10px;
+ }
+ 
+ /* Кнопка закрыть (x) */
+ .close {
+   color: #aaa;
+   float: right;
+   font-size: 28px;
+   font-weight: bold;
+ }
+ 
+ .close:hover,
+ .close:focus {
+   color: black;
+   text-decoration: none;
+   cursor: pointer;
+ }
+
+ #feedbackForm{
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   gap: 10px;
+   width: 100%;
+ }
+
+ .modal__item{
+   width: 48%;
+ }
+
+ .modal__group{
+   width: 100%;
+   label,
+   input,
+   textarea{
+      width: 100%;
+      font-size: 14px;
+      padding: 4px;
+   }
+
+   .modal__group{
+      input,
+      textarea{
+         border: 1px solid #00000025;
+      }
+   }
+   &-upp{
+      display: flex;
+      justify-content: space-between;
+   }
+ }
+ 
+ .modal-btn{
+   padding: 8px 26px;
+   border: none;
+   background-color: $blue;
+   color: $white;
+ }
+
+ .modal-btn:hover{
+   background-color: $light-blue;
+ }
+
+ .feedback-message {
+   margin-top: 10px;
+   padding: 10px;
+   background-color: #d4edda; /* Зеленый фон */
+   border: 1px solid #c3e6cb;
+   color: #155724; /* Зеленый текст */
+   display: none; /* Скрыть до появления сообщения */
+ }
+
 
 @import "mobile";
